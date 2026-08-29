@@ -5,7 +5,7 @@ problems and committing here is fully hands-off.
 
 <!-- CP-AGENT:START -->
 
-![Total Solved](https://img.shields.io/badge/Total%20Solved-11-2E8B57?style=flat-square) ![Solved Today](https://img.shields.io/badge/Solved%20Today-11-4C8BF5?style=flat-square) ![Streak](https://img.shields.io/badge/Streak-1%20days%20%E2%9C%A8-E25822?style=flat-square) ![Codeforces](https://img.shields.io/badge/Codeforces-11-1F8ACB?style=flat-square) ![LeetCode](https://img.shields.io/badge/LeetCode-0-FFA116?style=flat-square)
+![Total Solved](https://img.shields.io/badge/Total%20Solved-12-2E8B57?style=flat-square) ![Solved Today](https://img.shields.io/badge/Solved%20Today-12-4C8BF5?style=flat-square) ![Streak](https://img.shields.io/badge/Streak-1%20days%20%E2%9C%A8-E25822?style=flat-square) ![Codeforces](https://img.shields.io/badge/Codeforces-12-1F8ACB?style=flat-square) ![LeetCode](https://img.shields.io/badge/LeetCode-0-FFA116?style=flat-square)
 
 _Last updated: 2026-08-29 16:33 UTC_
 
@@ -17,17 +17,18 @@ _Last updated: 2026-08-29 16:33 UTC_
 
 | Platform | Solved |
 |:--|--:|
-| 🔵 Codeforces | **11** |
+| 🔵 Codeforces | **12** |
 | 🟠 LeetCode | **0** |
 
 ### By language
 
-![Python](https://img.shields.io/badge/Python-11-3776AB?style=flat-square)
+![Python](https://img.shields.io/badge/Python-12-3776AB?style=flat-square)
 
 ### 🕓 Recent submissions
 
 | Date | Platform | Problem | Solution |
 |:--|:--|:--|:--|
+| 2026-08-29 | 🔵 Codeforces | [546A](https://codeforces.com/problemset/problem/546/A) | [`A.py`](./Codeforces/546/A.py) |
 | 2026-08-29 | 🔵 Codeforces | [281A](https://codeforces.com/problemset/problem/281/A) | [`A.py`](./Codeforces/281/A.py) |
 | 2026-08-29 | 🔵 Codeforces | [112A](https://codeforces.com/problemset/problem/112/A) | [`A.py`](./Codeforces/112/A.py) |
 | 2026-08-29 | 🔵 Codeforces | [791A](https://codeforces.com/problemset/problem/791/A) | [`A.py`](./Codeforces/791/A.py) |
@@ -37,6 +38,5 @@ _Last updated: 2026-08-29 16:33 UTC_
 | 2026-08-29 | 🔵 Codeforces | [1512A](https://codeforces.com/problemset/problem/1512/A) | [`A.py`](./Codeforces/1512/A.py) |
 | 2026-08-29 | 🔵 Codeforces | [1915A](https://codeforces.com/problemset/problem/1915/A) | [`A.py`](./Codeforces/1915/A.py) |
 | 2026-08-29 | 🔵 Codeforces | [61A](https://codeforces.com/problemset/problem/61/A) | [`A.py`](./Codeforces/61/A.py) |
-| 2026-08-29 | 🔵 Codeforces | [344A](https://codeforces.com/problemset/problem/344/A) | [`A.py`](./Codeforces/344/A.py) |
 
 <!-- CP-AGENT:END -->
