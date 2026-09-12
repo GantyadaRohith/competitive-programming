@@ -5,9 +5,9 @@ problems and committing here is fully hands-off.
 
 <!-- CP-AGENT:START -->
 
-![Total Solved](https://img.shields.io/badge/Total%20Solved-39-2E8B57?style=flat-square) ![Solved Today](https://img.shields.io/badge/Solved%20Today-13-4C8BF5?style=flat-square) ![Streak](https://img.shields.io/badge/Streak-1%20days%20%E2%9C%A8-E25822?style=flat-square) ![Codeforces](https://img.shields.io/badge/Codeforces-32-1F8ACB?style=flat-square) ![LeetCode](https://img.shields.io/badge/LeetCode-7-FFA116?style=flat-square)
+![Total Solved](https://img.shields.io/badge/Total%20Solved-40-2E8B57?style=flat-square) ![Solved Today](https://img.shields.io/badge/Solved%20Today-14-4C8BF5?style=flat-square) ![Streak](https://img.shields.io/badge/Streak-1%20days%20%E2%9C%A8-E25822?style=flat-square) ![Codeforces](https://img.shields.io/badge/Codeforces-32-1F8ACB?style=flat-square) ![LeetCode](https://img.shields.io/badge/LeetCode-8-FFA116?style=flat-square)
 
-_Last updated: 2026-09-12 17:36 UTC_
+_Last updated: 2026-09-12 17:37 UTC_
 
 ---
 
@@ -18,16 +18,17 @@ _Last updated: 2026-09-12 17:36 UTC_
 | Platform | Solved |
 |:--|--:|
 | 🔵 Codeforces | **32** |
-| 🟠 LeetCode | **7** |
+| 🟠 LeetCode | **8** |
 
 ### By language
 
-![Python](https://img.shields.io/badge/Python-39-3776AB?style=flat-square)
+![Python](https://img.shields.io/badge/Python-40-3776AB?style=flat-square)
 
 ### 🕓 Recent submissions
 
 | Date | Platform | Problem | Solution |
 |:--|:--|:--|:--|
+| 2026-09-12 | 🟠 LeetCode | [check-ascii-palindromic](https://leetcode.com/problems/check-ascii-palindromic/) | [`check-ascii-palindromic.py`](./LeetCode/check-ascii-palindromic.py) |
 | 2026-09-12 | 🟠 LeetCode | [find-all-numbers-disappeared-in-an-array-ii](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array-ii/) | [`find-all-numbers-disappeared-in-an-array-ii.py`](./LeetCode/find-all-numbers-disappeared-in-an-array-ii.py) |
 | 2026-09-12 | 🟠 LeetCode | [longest-subarray-with-at-most-k-distinct-prime-factors](https://leetcode.com/problems/longest-subarray-with-at-most-k-distinct-prime-factors/) | [`longest-subarray-with-at-most-k-distinct-prime-factors.py`](./LeetCode/longest-subarray-with-at-most-k-distinct-prime-factors.py) |
 | 2026-09-12 | 🟠 LeetCode | [smallest-missing-multiple-of-k](https://leetcode.com/problems/smallest-missing-multiple-of-k/) | [`smallest-missing-multiple-of-k.py`](./LeetCode/smallest-missing-multiple-of-k.py) |
@@ -37,6 +38,5 @@ _Last updated: 2026-09-12 17:36 UTC_
 | 2026-09-12 | 🟠 LeetCode | [unique-3-digit-even-numbers](https://leetcode.com/problems/unique-3-digit-even-numbers/) | [`unique-3-digit-even-numbers.py`](./LeetCode/unique-3-digit-even-numbers.py) |
 | 2026-09-12 | 🔵 Codeforces | [1742A](https://codeforces.com/problemset/problem/1742/A) | [`A.py`](./Codeforces/1742/A.py) |
 | 2026-09-12 | 🔵 Codeforces | [510A](https://codeforces.com/problemset/problem/510/A) | [`A.py`](./Codeforces/510/A.py) |
-| 2026-09-12 | 🔵 Codeforces | [1352A](https://codeforces.com/problemset/problem/1352/A) | [`A.py`](./Codeforces/1352/A.py) |
 
 <!-- CP-AGENT:END -->
