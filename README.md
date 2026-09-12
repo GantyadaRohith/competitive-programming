@@ -5,9 +5,9 @@ problems and committing here is fully hands-off.
 
 <!-- CP-AGENT:START -->
 
-![Total Solved](https://img.shields.io/badge/Total%20Solved-303-2E8B57?style=flat-square) ![Solved Today](https://img.shields.io/badge/Solved%20Today-26-4C8BF5?style=flat-square) ![Streak](https://img.shields.io/badge/Streak-1%20days%20%E2%9C%A8-E25822?style=flat-square) ![Codeforces](https://img.shields.io/badge/Codeforces-32-1F8ACB?style=flat-square) ![LeetCode](https://img.shields.io/badge/LeetCode-271-FFA116?style=flat-square)
+![Total Solved](https://img.shields.io/badge/Total%20Solved-317-2E8B57?style=flat-square) ![Solved Today](https://img.shields.io/badge/Solved%20Today-26-4C8BF5?style=flat-square) ![Streak](https://img.shields.io/badge/Streak-1%20days%20%E2%9C%A8-E25822?style=flat-square) ![Codeforces](https://img.shields.io/badge/Codeforces-32-1F8ACB?style=flat-square) ![LeetCode](https://img.shields.io/badge/LeetCode-285-FFA116?style=flat-square)
 
-_Last updated: 2026-09-12 20:33 UTC_
+_Last updated: 2026-09-12 20:35 UTC_
 
 ---
 
@@ -18,11 +18,11 @@ _Last updated: 2026-09-12 20:33 UTC_
 | Platform | Solved |
 |:--|--:|
 | 🔵 Codeforces | **32** |
-| 🟠 LeetCode | **271** |
+| 🟠 LeetCode | **285** |
 
 ### By language
 
-![Python](https://img.shields.io/badge/Python-282-3776AB?style=flat-square) ![TXT](https://img.shields.io/badge/TXT-20-555555?style=flat-square) ![C++](https://img.shields.io/badge/C%2B%2B-1-00599C?style=flat-square)
+![Python](https://img.shields.io/badge/Python-296-3776AB?style=flat-square) ![TXT](https://img.shields.io/badge/TXT-20-555555?style=flat-square) ![C++](https://img.shields.io/badge/C%2B%2B-1-00599C?style=flat-square)
 
 ### 🕓 Recent submissions
 
