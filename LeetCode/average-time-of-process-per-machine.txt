@@ -1,0 +1,17 @@
+WITH act AS (
+    SELECT 
+        p1.machine_id,
+        (p2.timestamp - p1.timestamp) AS process_duration
+    FROM Activity p1 
+    JOIN Activity p2 
+      ON p1.machine_id = p2.machine_id 
+     AND p1.process_id = p2.process_id 
+    WHERE p1.activity_type = 'start' 
+      AND p2.activity_type = 'end'
+)
+
+SELECT 
+    machine_id, 
+    ROUND(AVG(process_duration), 3) AS processing_time 
+FROM act 
+GROUP BY machine_id;
