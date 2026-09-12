@@ -8,25 +8,31 @@
 
 ## 📝 Summary
 
-Accepted solution for Petya and Strings on Codeforces.
+Given two strings, determine if they are anagrams of each other and return the lexicographical order if they are not.
 
 ## 🔍 Key Observation
 
-Auto-generated from source-code heuristics (no GEMINI_API_KEY configured) -- set one in .env for LLM-authored insight, or edit this section manually.
+The key insight is to use a dictionary to map each letter to its position in the alphabet and then compare the positions of corresponding letters in the two strings.
 
 ## ⚙️ Algorithm
 
-**Direct simulation / brute force**
+1. Create a dictionary `a` that maps each letter from 'a' to 'z' to its corresponding position in the alphabet (0 to 25).
+2. Convert both input strings to lowercase to ensure case-insensitivity.
+3. If the strings are identical, print 0.
+4. Otherwise, iterate through the characters of the strings simultaneously.
+5. Compare the positions of corresponding characters in the dictionary.
+6. If a character in `str1` has a higher position than the corresponding character in `str2`, print 1 and break.
+7. If a character in `str1` has a lower position than the corresponding character in `str2`, print -1 and break.
 
 ## ⏱️ Complexity
 
 | Time | Space |
 |:--:|:--:|
-| `~O(n) (estimated)` | `~O(1) (estimated)` |
+| `O(n) where n is the length of the strings, as each character is processed once.` | `O(1) auxiliary space, as the dictionary `a` has a fixed size of 26.` |
 
 ## 🏷️ Tags
 
-`implementation` `strings`
+`string` `comparison` `alphabet` `dictionary`
 
 <details>
 <summary>💻 View solution</summary>
