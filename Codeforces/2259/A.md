@@ -8,25 +8,29 @@
 
 ## 📝 Summary
 
-Given an array of integers and an integer `k`, count the number of non-overlapping blocks of `k` consecutive elements that do not contain the value zero.
+Given a list of integers and a divisor, count how many sublists of length k contain at least one zero.
 
 ## 🔍 Key Observation
 
-The problem can be solved by directly iterating through the array in steps of `k` and checking each resulting block of `k` elements independently for the absence of zero.
+The key insight is to use a sliding window approach to efficiently count sublists containing at least one zero.
 
 ## ⚙️ Algorithm
 
-**Direct iteration / Block processing**
+1. Initialize a counter `cnt` to zero.
+2. Iterate over the list in steps of `k`.
+3. For each sublist of length `k`, check if it contains at least one zero.
+4. If it does, increment the counter `cnt`.
+5. Print the final count.
 
 ## ⏱️ Complexity
 
 | Time | Space |
 |:--:|:--:|
-| `O(n)` | `O(n)` |
+| `O(n) due to a single pass through the list.` | `O(1) auxiliary space.` |
 
 ## 🏷️ Tags
 
-`arrays` `counting` `brute force` `simulation`
+`sliding window` `sublist` `zero count`
 
 <details>
 <summary>💻 View solution</summary>

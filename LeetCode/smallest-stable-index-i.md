@@ -8,25 +8,25 @@
 
 ## 📝 Summary
 
-Find the smallest index `i` in an array `nums` such that the maximum element in the prefix `nums[0...i]` minus the minimum element in the suffix `nums[i...n-1]` is less than or equal to a given integer `k`. Return -1 if no such index exists.
+Find the smallest index in the array such that the maximum difference between the maximum and minimum values in the subarray ending at that index is less than or equal to k.
 
 ## 🔍 Key Observation
 
-The problem explicitly asks for the *smallest* stable index, making a direct linear scan from index `0` upwards the most intuitive approach. The first index `i` found to satisfy the given condition will be the correct answer.
+The solution uses a sliding window approach to efficiently find the smallest stable index.
 
 ## ⚙️ Algorithm
 
-**Brute-force linear scan. Iterate through each possible index `i` from `0` to `n-1`. In each iteration, compute the maximum value within the prefix `nums[0...i]` and the minimum value within the suffix `nums[i...n-1]`. If their difference is less than or equal to `k`, return `i`. If the loop completes without finding such an index, return -1.**
+The algorithm iterates through the array while maintaining a window of elements ending at the current index. It checks if the difference between the maximum and minimum values in this window is less than or equal to k. If so, it returns the current index. If no such index is found, it returns -1.
 
 ## ⏱️ Complexity
 
 | Time | Space |
 |:--:|:--:|
-| `O(n^2)` | `O(n)` |
+| `O(n) due to a single pass through the array.` | `O(1) auxiliary space.` |
 
 ## 🏷️ Tags
 
-`arrays` `bruteforce` `linear scan` `simulation`
+`sliding window` `array` `minimum` `maximum`
 
 <details>
 <summary>💻 View solution</summary>

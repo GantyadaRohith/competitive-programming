@@ -8,25 +8,27 @@
 
 ## 📝 Summary
 
-The problem asks for the minimum non-negative integer k such that by changing each element a_x to either a_x-k or a_x+k, the resulting array is no longer sorted non-decreasingly (i.e., there exists at least one index i where a_i > a_{i+1}).
+Given an array of integers, find the minimum difference between any two consecutive elements and print the number of ways to make the array sorted by swapping at most one pair of adjacent elements.
 
 ## 🔍 Key Observation
 
-To make a_i > a_{i+1} using the smallest k for a specific pair, we should apply +k to a_i and -k to a_{i+1}. This requires a_i + k > a_{i+1} - k, which simplifies to 2k > a_{i+1} - a_i. The smallest integer k satisfying this is ( (a_{i+1} - a_i) // 2 ) + 1. The overall minimum k is achieved by finding the minimum difference (a_{i+1} - a_i) across all adjacent pairs in the original array. If the array is already desorted, k=0.
+The key insight is to identify the minimum difference between consecutive elements and determine how many swaps are needed to sort the array by swapping at most one pair of adjacent elements.
 
 ## ⚙️ Algorithm
 
-**Iterate through the array to find the minimum difference between adjacent elements, say min_diff = min(arr[i] - arr[i-1]). If min_diff is negative, the array is already desorted, and the answer is 0. Otherwise, the answer is (min_diff // 2) + 1.**
+1. Iterate through the array to find the minimum difference between consecutive elements.
+2. If the minimum difference is non-negative, calculate the number of swaps needed to sort the array by swapping at most one pair of adjacent elements.
+3. If the minimum difference is negative, it's impossible to sort the array by swapping at most one pair of adjacent elements, so print 0.
 
 ## ⏱️ Complexity
 
 | Time | Space |
 |:--:|:--:|
-| `O(n)` | `O(n)` |
+| `O(n) due to a single pass through the array.` | `O(1) auxiliary space.` |
 
 ## 🏷️ Tags
 
-`greedy` `arrays` `math`
+`short` `lowercase` `algorithm` `sorting`
 
 <details>
 <summary>💻 View solution</summary>

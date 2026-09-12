@@ -8,25 +8,25 @@
 
 ## 📝 Summary
 
-Accepted solution for Maximum Length Substring With Two Occurrences on LeetCode.
+Find the maximum length of a substring that contains at most two distinct characters.
 
 ## 🔍 Key Observation
 
-Auto-generated from source-code heuristics (no GEMINI_API_KEY configured) -- set one in .env for LLM-authored insight, or edit this section manually.
+Use a sliding window approach to track the characters and their counts.
 
 ## ⚙️ Algorithm
 
-**Direct simulation / brute force**
+Initialize two pointers, `left` and `right`, to mark the current window. Use a dictionary to count occurrences of each character. Expand the window by moving `right` and update the count. If a character count exceeds two, shrink the window from the left until the count is valid again. Update the maximum length of the valid substring.
 
 ## ⏱️ Complexity
 
 | Time | Space |
 |:--:|:--:|
-| `~O(n) (estimated)` | `~O(1) (estimated)` |
+| `O(n) where n is the length of the string, as each character is processed at most twice.` | `O(1) auxiliary space, as the dictionary will store at most two characters.` |
 
 ## 🏷️ Tags
 
-`untagged`
+`sliding window` `hash map` `substring`
 
 <details>
 <summary>💻 View solution</summary>

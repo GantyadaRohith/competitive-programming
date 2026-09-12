@@ -8,25 +8,27 @@
 
 ## 📝 Summary
 
-Accepted solution for Soldier and Bananas on Codeforces.
+Given a soldier's capacity to carry bananas and the number of bananas available, determine how many bananas the soldier can't carry.
 
 ## 🔍 Key Observation
 
-Auto-generated from source-code heuristics (no GEMINI_API_KEY configured) -- set one in .env for LLM-authored insight, or edit this section manually.
+The total number of bananas the soldier can carry is the sum of the first w natural numbers multiplied by k.
 
 ## ⚙️ Algorithm
 
-**Recursion**
+1. Calculate the total number of bananas the soldier can carry using the formula for the sum of the first w natural numbers: (w*(w+1))/2. Multiply this by k to get the total capacity of bananas the soldier can carry in one trip.
+2. Calculate the total number of bananas the soldier can carry in n trips.
+3. If the total capacity is greater than or equal to n, the soldier can't carry any bananas. Otherwise, calculate the number of bananas the soldier can't carry.
 
 ## ⏱️ Complexity
 
 | Time | Space |
 |:--:|:--:|
-| `~O(n) (estimated)` | `~O(1) (estimated)` |
+| `O(1) due to constant-time arithmetic operations.` | `O(1) auxiliary space.` |
 
 ## 🏷️ Tags
 
-`brute force` `implementation` `math` `recursion`
+`short` `lowercase` `math` `tags`
 
 <details>
 <summary>💻 View solution</summary>

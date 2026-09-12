@@ -8,25 +8,25 @@
 
 ## 📝 Summary
 
-The problem asks to generate all unique subsets (power set) from an integer array that may contain duplicate elements.
+Given a collection of integers that may contain duplicates, return all unique subsets.
 
 ## 🔍 Key Observation
 
-To handle duplicate numbers and ensure unique subsets, sort the input array first. During backtracking, skip selecting an element if it is identical to the previous element considered at the same recursion level, and it's not the first element chosen at that level.
+Sorting the input array helps in handling duplicates and simplifies the backtracking process.
 
 ## ⚙️ Algorithm
 
-**Backtracking**
+The solution uses backtracking to explore all possible subsets. It first sorts the array to ensure that duplicates are adjacent. The `backtrack` function builds subsets by adding elements to the current subset and recursively exploring further. It skips duplicate elements to avoid duplicate subsets in the result.
 
 ## ⏱️ Complexity
 
 | Time | Space |
 |:--:|:--:|
-| `O(N * 2^N)` | `O(N)` |
+| `O(n * 2^n) due to the generation of all subsets and the backtracking process.` | `O(n * 2^n) for storing all subsets and the recursion stack.` |
 
 ## 🏷️ Tags
 
-`backtracking` `recursion` `subsets` `array` `duplicates`
+`backtracking` `subset` `duplicate`
 
 <details>
 <summary>💻 View solution</summary>

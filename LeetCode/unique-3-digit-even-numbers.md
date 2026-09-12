@@ -8,25 +8,33 @@
 
 ## 📝 Summary
 
-The problem asks to form all possible unique 3-digit even integers by concatenating three distinct digits from a given list, ensuring the first digit is non-zero.
+Given a list of digits, find the number of unique 3-digit even numbers that can be formed.
 
 ## 🔍 Key Observation
 
-The direct enumeration of all distinct permutations of three digits, followed by filtering based on the 3-digit number criteria (first digit non-zero, last digit even), efficiently generates all valid numbers, with a hash set ensuring uniqueness.
+The key insight is to use a set to store unique numbers and iterate through all possible combinations of digits to form valid 3-digit even numbers.
 
 ## ⚙️ Algorithm
 
-**Brute-force permutation generation with filtering and hash set for uniqueness.**
+1. Check if all digits are odd. If so, return 0 since no even numbers can be formed.
+2. Initialize an empty set to store unique numbers.
+3. Iterate through all possible combinations of three digits (i, j, k) where i, j, and k are distinct.
+4. Ensure i is not equal to j, j is not equal to k, and i is not equal to k to avoid duplicate numbers.
+5. Ensure the first digit is not zero to form a valid 3-digit number.
+6. Ensure the last digit is even to form an even number.
+7. Form the number by concatenating digits i, j, and k.
+8. Add the number to the set.
+9. Return the size of the set as the count of unique 3-digit even numbers.
 
 ## ⏱️ Complexity
 
 | Time | Space |
 |:--:|:--:|
-| `O(n^3)` | `O(1)` |
+| `O(n^3) due to the triple nested loop iterating through all combinations of three digits.` | `O(n^3) in the worst case due to storing all unique numbers in the set.` |
 
 ## 🏷️ Tags
 
-`brute force` `permutations` `hash set` `counting`
+`python` `set` `combinations` `3-digit` `even`
 
 <details>
 <summary>💻 View solution</summary>

@@ -8,25 +8,27 @@
 
 ## 📝 Summary
 
-The problem asks to reorder a given array `a` into a new array `b` such that for any `k` from `1` to `n-1`, the sum of the first `k` elements of `b` is not equal to `b_{k+1}`. If such an array `b` can be formed, output "YES" and one such arrangement; otherwise, output "NO".
+Given an array, determine if it can be sorted in non-decreasing order by swapping adjacent elements.
 
 ## 🔍 Key Observation
 
-A solution is possible if and only if not all elements in the input array are identical. If a solution exists, one can be constructed by sorting the array in descending order. For positive array elements, the sum `b_1 + ... + b_k` will be strictly greater than `b_{k+1}` for `k > 1`. The only problematic case is `b_1 == b_2`, which can be resolved by swapping `b_2` with `b_n` (the smallest element) to ensure `b_1 != b_2`.
+The key insight is to check if the array can be sorted by swapping adjacent elements, which is equivalent to checking if it is possible to make the array a palindrome.
 
 ## ⚙️ Algorithm
 
-**Constructive algorithm using sorting.**
+1. Sort the array in descending order to find the largest element that can be swapped to the end to make the array non-decreasing.
+2. Check if the array is already sorted in non-decreasing order.
+3. If not, find the first index where the array is not in non-decreasing order and swap the element with the last element to make the array non-decreasing.
 
 ## ⏱️ Complexity
 
 | Time | Space |
 |:--:|:--:|
-| `O(n log n)` | `O(n)` |
+| `O(n log n) due to sorting.` | `O(1) auxiliary space.` |
 
 ## 🏷️ Tags
 
-`constructive algorithms` `sorting` `greedy` `arrays`
+`sort` `palindrome` `swap`
 
 <details>
 <summary>💻 View solution</summary>

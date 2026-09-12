@@ -8,25 +8,27 @@
 
 ## 📝 Summary
 
-Accepted solution for Anton and Danik on Codeforces.
+Given a string of 'A's and 'B's, determine who wins the game based on the number of 'A's and 'B's.
 
 ## 🔍 Key Observation
 
-Auto-generated from source-code heuristics (no GEMINI_API_KEY configured) -- set one in .env for LLM-authored insight, or edit this section manually.
+The key insight is to count the occurrences of 'A' and 'B' and compare them to determine the winner.
 
 ## ⚙️ Algorithm
 
-**Direct simulation / brute force**
+1. Initialize counters for 'A' and 'B'.
+2. Iterate through the string and update the counters based on the character encountered.
+3. Compare the counters to determine the winner: 'Friendship' if equal, 'Anton' if 'A' is more, 'Danik' if 'B' is more.
 
 ## ⏱️ Complexity
 
 | Time | Space |
 |:--:|:--:|
-| `~O(n) (estimated)` | `~O(1) (estimated)` |
+| `O(n) due to a single pass through the string.` | `O(1) auxiliary space.` |
 
 ## 🏷️ Tags
 
-`implementation` `strings`
+`simple` `counting` `comparison`
 
 <details>
 <summary>💻 View solution</summary>

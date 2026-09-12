@@ -8,25 +8,30 @@
 
 ## 📝 Summary
 
-The problem asks to add two binary strings, `a` and `b`, and return their sum as a new binary string.
+Given two binary strings, add them together and return the result as a binary string.
 
 ## 🔍 Key Observation
 
-Binary addition can be performed using bitwise operations: XOR calculates the sum without carry, and (AND << 1) calculates the carry to be added in the next step, repeating until no carry is left.
+The key insight is to use bitwise operations to simulate the addition of binary numbers.
 
 ## ⚙️ Algorithm
 
-**Bitwise addition (XOR for sum, AND-shift for carry)**
+1. Convert the binary strings to integers (base 2).
+2. Apply bitwise addition logic:
+   - Sum without carry: a ^ b
+   - Carry: (a & b) << 1
+3. Repeat the process until there is no carry left.
+4. Convert the result back to a binary string and strip the '0b' prefix.
 
 ## ⏱️ Complexity
 
 | Time | Space |
 |:--:|:--:|
-| `O(N)` | `O(N)` |
+| `O(n) due to the single pass through the binary strings.` | `O(1) auxiliary space.` |
 
 ## 🏷️ Tags
 
-`strings` `binary` `bitwise operations` `math`
+`binary` `bitwise` `addition`
 
 <details>
 <summary>💻 View solution</summary>

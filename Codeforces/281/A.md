@@ -8,25 +8,28 @@
 
 ## 📝 Summary
 
-Accepted solution for Word Capitalization on Codeforces.
+Given a word, capitalize the first letter if it is lowercase.
 
 ## 🔍 Key Observation
 
-Auto-generated from source-code heuristics (no GEMINI_API_KEY configured) -- set one in .env for LLM-authored insight, or edit this section manually.
+The first character of the word determines whether it needs to be capitalized.
 
 ## ⚙️ Algorithm
 
-**Direct simulation / brute force**
+1. Read the input word.
+2. Check if the first character is lowercase.
+3. If so, capitalize it and print the modified word.
+4. If not, print the original word.
 
 ## ⏱️ Complexity
 
 | Time | Space |
 |:--:|:--:|
-| `O(1)–O(n) (estimated -- could not confidently infer)` | `~O(1) (estimated)` |
+| `O(1) due to constant-time operations.` | `O(1) auxiliary space.` |
 
 ## 🏷️ Tags
 
-`implementation` `strings`
+`short` `lowercase` `string` `capitalization`
 
 <details>
 <summary>💻 View solution</summary>

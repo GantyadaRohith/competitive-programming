@@ -8,25 +8,28 @@
 
 ## 📝 Summary
 
-Given three integers where exactly two are identical, the problem asks to find the value of the unique integer.
+Given an array of integers, find the integer that appears an odd number of times.
 
 ## 🔍 Key Observation
 
-The bitwise XOR sum of a set of numbers where one number appears once and all other numbers appear an even number of times will result in the unique number itself. For three numbers `a, a, b`, `a ^ a ^ b = b`.
+The XOR operation can be used to find the odd one out because it cancels out pairs of identical numbers.
 
 ## ⚙️ Algorithm
 
-**Bitwise XOR**
+1. Initialize a variable `cnt` to 0.
+2. Iterate through each number in the array.
+3. For each number, XOR it with `cnt`.
+4. After processing all numbers, `cnt` will hold the odd one out.
 
 ## ⏱️ Complexity
 
 | Time | Space |
 |:--:|:--:|
-| `O(t)` | `O(1)` |
+| `O(n) due to a single pass through the array.` | `O(1) auxiliary space.` |
 
 ## 🏷️ Tags
 
-`bitwise operations` `xor` `implementation`
+`bitwise` `xor` `single`
 
 <details>
 <summary>💻 View solution</summary>

@@ -8,25 +8,25 @@
 
 ## 📝 Summary
 
-Given three integers, determine if any one of them is equal to the sum of the other two.
+Given three integers, determine if they can form a triangle.
 
 ## 🔍 Key Observation
 
-Since there are only three numbers, we can directly check all three possible pairs to see if their sum equals the remaining number.
+The triangle inequality theorem states that the sum of the lengths of any two sides of a triangle must be greater than the length of the remaining side.
 
 ## ⚙️ Algorithm
 
-**Direct conditional checks**
+The solution checks all three possible combinations of the three integers to see if they satisfy the triangle inequality theorem. If any combination satisfies the condition, it prints 'YES'; otherwise, it prints 'NO'.
 
 ## ⏱️ Complexity
 
 | Time | Space |
 |:--:|:--:|
-| `O(1)` | `O(1)` |
+| `O(1) due to constant-time operations.` | `O(1) auxiliary space.` |
 
 ## 🏷️ Tags
 
-`implementation` `math` `conditionals`
+`easy` `math` `triangle`
 
 <details>
 <summary>💻 View solution</summary>

@@ -8,25 +8,31 @@
 
 ## 📝 Summary
 
-Accepted solution for The 67th 6-7 Integer Problem on Codeforces.
+Given an array of integers, find the maximum sum of the first element and the minimum sum of the remaining elements.
 
 ## 🔍 Key Observation
 
-Auto-generated from source-code heuristics (no GEMINI_API_KEY configured) -- set one in .env for LLM-authored insight, or edit this section manually.
+The solution involves sorting the array and then calculating the sum of the first element and the sum of the remaining elements in reverse order.
 
 ## ⚙️ Algorithm
 
-**Recursion + Sorting**
+1. Read the number of test cases 't'.
+2. For each test case:
+   a. Read the array of integers.
+   b. Sort the array in descending order.
+   c. Calculate the sum of the first element.
+   d. Calculate the sum of the remaining elements by iterating through the sorted array starting from the second element.
+   e. Print the difference between the sum of the first element and the sum of the remaining elements.
 
 ## ⏱️ Complexity
 
 | Time | Space |
 |:--:|:--:|
-| `~O(n^2) (estimated -- 2 nested loops)` | `~O(1) (estimated)` |
+| `O(n log n) due to sorting.` | `O(1) auxiliary space.` |
 
 ## 🏷️ Tags
 
-`greedy` `math` `recursion` `sorting`
+`sort` `sum` `difference`
 
 <details>
 <summary>💻 View solution</summary>

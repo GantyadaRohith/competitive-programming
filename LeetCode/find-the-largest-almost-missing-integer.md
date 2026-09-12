@@ -8,25 +8,27 @@
 
 ## 📝 Summary
 
-Accepted solution for Find the Largest Almost Missing Integer on LeetCode.
+Given an array of integers and a positive integer k, find the largest integer that appears in exactly one contiguous subarray of size k.
 
 ## 🔍 Key Observation
 
-Auto-generated from source-code heuristics (no GEMINI_API_KEY configured) -- set one in .env for LLM-authored insight, or edit this section manually.
+The key insight is to use a sliding window approach to count the frequency of each integer in every subarray of size k.
 
 ## ⚙️ Algorithm
 
-**Hash map/set lookup**
+1. Initialize a frequency counter to keep track of the count of each integer in the current window of size k.
+2. Iterate through the array, updating the frequency counter for each integer in the current window.
+3. After processing each window, find the maximum integer that appears exactly once.
 
 ## ⏱️ Complexity
 
 | Time | Space |
 |:--:|:--:|
-| `~O(n^3) (estimated -- 3 nested loops)` | `~O(n) (estimated)` |
+| `O(n) where n is the length of the array, as each element is processed at most twice (once for each window it belongs to).` | `O(n) for the frequency counter, as it stores the count of each integer in the current window.` |
 
 ## 🏷️ Tags
 
-`hash-map`
+`sliding window` `frequency counting` `array`
 
 <details>
 <summary>💻 View solution</summary>

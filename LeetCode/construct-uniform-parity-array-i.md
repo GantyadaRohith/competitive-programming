@@ -8,25 +8,25 @@
 
 ## 📝 Summary
 
-Accepted solution for Construct Uniform Parity Array I on LeetCode.
+Determine if all elements in the array are the same.
 
 ## 🔍 Key Observation
 
-Auto-generated from source-code heuristics (no GEMINI_API_KEY configured) -- set one in .env for LLM-authored insight, or edit this section manually.
+The solution checks if all elements in the array are equal.
 
 ## ⚙️ Algorithm
 
-**Direct simulation / brute force**
+The code simply returns `True` if all elements in the list `nums1` are the same. This is achieved by comparing the first element to the rest of the list.
 
 ## ⏱️ Complexity
 
 | Time | Space |
 |:--:|:--:|
-| `O(1)–O(n) (estimated -- could not confidently infer)` | `~O(1) (estimated)` |
+| `O(n) due to the single pass through the list.` | `O(1) auxiliary space.` |
 
 ## 🏷️ Tags
 
-`untagged`
+`short` `lowercase` `array` `equality`
 
 <details>
 <summary>💻 View solution</summary>

@@ -8,25 +8,25 @@
 
 ## 📝 Summary
 
-The problem asks to count the number of set bits (1s) in the binary representation of a given unsigned integer.
+Count the number of 1 bits in the binary representation of an integer.
 
 ## 🔍 Key Observation
 
-The least significant bit can be checked using a bitwise AND operation with 1 (n & 1), and then the number can be right-shifted (n >>= 1) to examine the next bit.
+Use bitwise operations to count the number of 1 bits efficiently.
 
 ## ⚙️ Algorithm
 
-**Bit manipulation**
+Iterate through each bit of the integer using a while loop. Use the bitwise AND operation to check if the current bit is 1, and increment a counter if it is. Right shift the integer to process the next bit.
 
 ## ⏱️ Complexity
 
 | Time | Space |
 |:--:|:--:|
-| `O(1)` | `O(1)` |
+| `O(32) due to the fixed number of bits in an integer.` | `O(1) auxiliary space.` |
 
 ## 🏷️ Tags
 
-`bit manipulation` `easy` `fundamentals`
+`bitwise` `count` `integer`
 
 <details>
 <summary>💻 View solution</summary>

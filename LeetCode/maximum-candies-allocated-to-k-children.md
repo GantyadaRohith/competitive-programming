@@ -8,25 +8,31 @@
 
 ## 📝 Summary
 
-Accepted solution for Maximum Candies Allocated to K Children on LeetCode.
+Determine the maximum number of candies each child can receive such that the total number of candies distributed does not exceed k.
 
 ## 🔍 Key Observation
 
-Auto-generated from source-code heuristics (no GEMINI_API_KEY configured) -- set one in .env for LLM-authored insight, or edit this section manually.
+Use binary search to find the maximum number of candies each child can receive.
 
 ## ⚙️ Algorithm
 
-**Direct simulation / brute force**
+1. Initialize low and high as 1 and the sum of candies divided by k, respectively.
+2. While low is less than or equal to high:
+   a. Calculate mid.
+   b. Distribute candies to children and count how many children can receive at least mid candies.
+   c. If the count is less than k, move high to mid - 1.
+   d. Otherwise, move low to mid + 1.
+3. Return high as the maximum number of candies each child can receive.
 
 ## ⏱️ Complexity
 
 | Time | Space |
 |:--:|:--:|
-| `~O(n^2) (estimated -- 2 nested loops)` | `~O(1) (estimated)` |
+| `O(n log m) where n is the number of candies and m is the sum of candies divided by k.` | `O(1) auxiliary space.` |
 
 ## 🏷️ Tags
 
-`untagged`
+`binary search` `lowercase` `candies` `children`
 
 <details>
 <summary>💻 View solution</summary>

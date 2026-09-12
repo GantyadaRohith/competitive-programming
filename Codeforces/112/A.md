@@ -8,31 +8,28 @@
 
 ## 📝 Summary
 
-Given two strings, determine if they are anagrams of each other and return the lexicographical order if they are not.
+Given two strings, determine their lexicographical order.
 
 ## 🔍 Key Observation
 
-The key insight is to use a dictionary to map each letter to its position in the alphabet and then compare the positions of corresponding letters in the two strings.
+The solution uses a dictionary to map each letter to a unique integer, allowing for a straightforward comparison.
 
 ## ⚙️ Algorithm
 
-1. Create a dictionary `a` that maps each letter from 'a' to 'z' to its corresponding position in the alphabet (0 to 25).
-2. Convert both input strings to lowercase to ensure case-insensitivity.
-3. If the strings are identical, print 0.
-4. Otherwise, iterate through the characters of the strings simultaneously.
-5. Compare the positions of corresponding characters in the dictionary.
-6. If a character in `str1` has a higher position than the corresponding character in `str2`, print 1 and break.
-7. If a character in `str1` has a lower position than the corresponding character in `str2`, print -1 and break.
+1. Create a dictionary to map each letter of the alphabet to a unique integer (a=0, b=1, ..., z=25).
+2. Convert both input strings to lowercase to ensure case-insensitive comparison.
+3. Compare the corresponding characters of both strings using the dictionary values.
+4. Return the result based on the comparison: 0 if the strings are equal, 1 if the first string is lexicographically greater, and -1 if the first string is lexicographically smaller.
 
 ## ⏱️ Complexity
 
 | Time | Space |
 |:--:|:--:|
-| `O(n) where n is the length of the strings, as each character is processed once.` | `O(1) auxiliary space, as the dictionary `a` has a fixed size of 26.` |
+| `O(n) due to the single pass through the strings.` | `O(1) auxiliary space, as the dictionary size is constant.` |
 
 ## 🏷️ Tags
 
-`string` `comparison` `alphabet` `dictionary`
+`short` `lowercase` `string` `comparison`
 
 <details>
 <summary>💻 View solution</summary>

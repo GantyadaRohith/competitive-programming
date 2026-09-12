@@ -8,25 +8,28 @@
 
 ## 📝 Summary
 
-Accepted solution for Bear and Big Brother on Codeforces.
+Given two integers l and b, determine the minimum number of operations required to make l equal to b by multiplying l by 3 and b by 2.
 
 ## 🔍 Key Observation
 
-Auto-generated from source-code heuristics (no GEMINI_API_KEY configured) -- set one in .env for LLM-authored insight, or edit this section manually.
+The problem can be solved by iteratively multiplying l by 3 and b by 2 until l is at least twice the size of b.
 
 ## ⚙️ Algorithm
 
-**Recursion**
+1. Initialize l and b as input values.
+2. Use a while loop to multiply l by 3 and b by 2 until l is at least twice the size of b.
+3. Increment a counter i for each operation.
+4. Print the counter i after the loop.
 
 ## ⏱️ Complexity
 
 | Time | Space |
 |:--:|:--:|
-| `~O(n) (estimated)` | `~O(1) (estimated)` |
+| `O(log(max(l, b))) due to the doubling and tripling operations.` | `O(1) auxiliary space.` |
 
 ## 🏷️ Tags
 
-`implementation` `recursion`
+`short` `lowercase` `bear` `big` `brother`
 
 <details>
 <summary>💻 View solution</summary>

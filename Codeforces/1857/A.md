@@ -8,25 +8,27 @@
 
 ## 📝 Summary
 
-The problem asks if an array can be partitioned into two (possibly empty) subarrays such that the sum of elements in each subarray is even.
+Given an array of integers, determine if it's possible to color all elements with two colors such that no two adjacent elements have the same color.
 
 ## 🔍 Key Observation
 
-For both subarray sums to be even, their combined sum (the total sum of the original array) must also be even. An array's total sum is even if and only if it contains an even number of odd integers. If the total sum is even, it is always possible to achieve the goal (e.g., by putting all elements into one subarray and leaving the other empty). Thus, the problem reduces to checking if the total count of odd numbers in the array is even.
+The problem can be solved by counting the number of odd numbers in the array. If the count of odd numbers is even, it's possible to color the array as required.
 
 ## ⚙️ Algorithm
 
-**Parity check by counting odd numbers.**
+1. Count the number of odd numbers in the array.
+2. If the count of odd numbers is even, print 'YES'.
+3. If the count of odd numbers is odd, print 'NO'.
 
 ## ⏱️ Complexity
 
 | Time | Space |
 |:--:|:--:|
-| `O(N) per test case` | `O(N) per test case` |
+| `O(n) due to a single pass through the array.` | `O(1) auxiliary space.` |
 
 ## 🏷️ Tags
 
-`math` `parity` `arrays` `implementation`
+`array` `odd` `even` `coloring`
 
 <details>
 <summary>💻 View solution</summary>

@@ -8,25 +8,28 @@
 
 ## 📝 Summary
 
-Find the length of the longest subarray such that the total number of distinct prime factors among all elements in that subarray is at most 'k'.
+Find the longest subarray with at most k distinct prime factors.
 
 ## 🔍 Key Observation
 
-The problem structure suggests a sliding window approach. We can efficiently track the count of distinct prime factors within the current window using a hash map, expanding the window to the right and shrinking it from the left when the constraint is violated.
+Use a sliding window approach to maintain a window of subarrays with at most k distinct prime factors.
 
 ## ⚙️ Algorithm
 
-**Sliding Window + Prime Factorization (Trial Division)**
+1. Precompute the prime factors for each number in the array.
+2. Use a sliding window to expand and contract the window while maintaining the count of distinct prime factors.
+3. If the number of distinct prime factors exceeds k, shrink the window from the left until it is valid again.
+4. Keep track of the maximum length of valid subarrays.
 
 ## ⏱️ Complexity
 
 | Time | Space |
 |:--:|:--:|
-| `O(N * sqrt(M))` | `O(N * log M)` |
+| `O(n log n) due to sorting and prime factor computation.` | `O(n) auxiliary space for storing prime factors and frequency counts.` |
 
 ## 🏷️ Tags
 
-`sliding window` `prime factorization` `hash map` `number theory`
+`sliding window` `prime factors` `subarray`
 
 <details>
 <summary>💻 View solution</summary>

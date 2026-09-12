@@ -8,25 +8,27 @@
 
 ## 📝 Summary
 
-The problem asks to find the 1-based index of the unique integer in an array, where all other integers appear at least twice.
+Given an array of integers, find the first element that appears exactly once.
 
 ## 🔍 Key Observation
 
-Exactly one number in the array appears only once, while all other numbers appear multiple times. We can identify this unique number by counting frequencies.
+The key insight is to use two dictionaries to count occurrences and their first appearance index.
 
 ## ⚙️ Algorithm
 
-**Hash map (frequency counting)**
+1. Initialize two dictionaries, `a` and `b`, to store the first appearance index and count of each element, respectively.
+2. Iterate through the array, updating `a` and `b` for each element.
+3. After processing the array, iterate through `b` to find the first element with a count of 1 and print its first appearance index.
 
 ## ⏱️ Complexity
 
 | Time | Space |
 |:--:|:--:|
-| `O(n)` | `O(n)` |
+| `O(n) due to a single pass through the array and a second pass through the dictionary.` | `O(n) for the two dictionaries.` |
 
 ## 🏷️ Tags
 
-`arrays` `hash maps` `counting` `implementation` `brute force`
+`python` `hashmap` `dictionary`
 
 <details>
 <summary>💻 View solution</summary>

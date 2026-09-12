@@ -8,25 +8,32 @@
 
 ## 📝 Summary
 
-Decompose a given integer into a sum of the minimum possible number of "round numbers" (numbers with only one non-zero digit) and output these round numbers.
+Given a positive integer, count the number of digits that are not zero and print them in order.
 
 ## 🔍 Key Observation
 
-Each non-zero digit in the decimal representation of the given number corresponds to a unique round number. For example, the digit 'd' at position 'k' (from the right, 0-indexed) corresponds to the round number d * 10^k.
+The problem requires counting non-zero digits and printing them in order, which can be efficiently achieved by converting the number to a string and iterating over it.
 
 ## ⚙️ Algorithm
 
-**Digit extraction / String processing**
+1. Read the number of test cases `t`.
+2. For each test case:
+   a. Read the integer `n`.
+   b. If `n` is between 1 and 9, print 1 and `n`.
+   c. Otherwise, convert `n` to a string.
+   d. Count the number of non-zero digits.
+   e. Print the count.
+   f. Print each non-zero digit followed by the appropriate number of zeros to match its original position in the number.
 
 ## ⏱️ Complexity
 
 | Time | Space |
 |:--:|:--:|
-| `O(D)` | `O(D)` |
+| `O(n) due to the conversion of the number to a string and the iteration over its digits.` | `O(1) auxiliary space.` |
 
 ## 🏷️ Tags
 
-`implementation` `math` `string processing` `digit manipulation`
+`short` `lowercase` `string` `count`
 
 <details>
 <summary>💻 View solution</summary>

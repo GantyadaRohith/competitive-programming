@@ -8,25 +8,29 @@
 
 ## 📝 Summary
 
-Calculate the minimum total width required for 'n' friends to pass a fence of height 'h', where friends taller than 'h' require 2 units of width and others require 1 unit.
+Given a fence with heights, calculate the minimum number of posts needed to ensure all fences are at least as tall as a given height.
 
 ## 🔍 Key Observation
 
-The width contribution of each person is determined by a simple conditional rule: 2 units if their height exceeds the fence height 'h', otherwise 1 unit.
+The key insight is to count the number of posts needed for each segment where the fence height is less than the given height.
 
 ## ⚙️ Algorithm
 
-**Iteration / Direct Simulation**
+1. Initialize a variable `width` to 0. This will keep track of the total number of posts needed.
+2. Iterate through the list of fence heights.
+3. For each height, if it is less than the given height `h`, add 2 to `width` (since two posts are needed for a segment where the height is less than `h`).
+4. If the height is greater than or equal to `h`, add 1 to `width` (since one post is needed for a segment where the height is at least `h`).
+5. Print the final value of `width`.
 
 ## ⏱️ Complexity
 
 | Time | Space |
 |:--:|:--:|
-| `O(n)` | `O(n)` |
+| `O(n) due to a single pass through the list of fence heights.` | `O(1) auxiliary space.` |
 
 ## 🏷️ Tags
 
-`implementation` `arrays` `ad-hoc` `easy`
+`short` `lowercase` `fence` `posts`
 
 <details>
 <summary>💻 View solution</summary>

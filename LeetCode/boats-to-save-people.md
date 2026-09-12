@@ -8,25 +8,31 @@
 
 ## 📝 Summary
 
-Accepted solution for Boats to Save People on LeetCode.
+Given a list of people's weights and a boat's weight limit, determine the minimum number of boats required to rescue all people.
 
 ## 🔍 Key Observation
 
-Auto-generated from source-code heuristics (no GEMINI_API_KEY configured) -- set one in .env for LLM-authored insight, or edit this section manually.
+The key insight is to sort the people by weight and use two pointers to pair the lightest and heaviest people in each boat.
 
 ## ⚙️ Algorithm
 
-**Sorting**
+1. Sort the people's weights in ascending order.
+2. Initialize two pointers, `low` at the start and `high` at the end of the sorted list.
+3. While `low` is less than or equal to `high`:
+   - If the sum of the weights of the people at `low` and `high` is less than or equal to the boat's limit, they can share a boat. Move both pointers inward.
+   - Otherwise, the heaviest person must use a boat alone. Move the `high` pointer inward.
+4. Increment the boat count for each pair or single person in a boat.
+5. Return the total number of boats used.
 
 ## ⏱️ Complexity
 
 | Time | Space |
 |:--:|:--:|
-| `~O(n^2) (estimated -- 2 nested loops)` | `~O(1) (estimated)` |
+| `O(n log n) due to sorting.` | `O(1) auxiliary space.` |
 
 ## 🏷️ Tags
 
-`sorting`
+`short` `lowercase` `boats` `rescue`
 
 <details>
 <summary>💻 View solution</summary>

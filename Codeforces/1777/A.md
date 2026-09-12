@@ -8,25 +8,30 @@
 
 ## 📝 Summary
 
-The problem asks for the minimum number of operations to make an array "good", where a good array has no two adjacent elements with the same parity. An operation involves multiplying two adjacent elements and replacing them with their product.
+Given an array, determine the minimum number of elements to remove to make all elements in the array have the same parity (all odd or all even).
 
 ## 🔍 Key Observation
 
-If two adjacent elements have the same parity, they must be combined. Since the product of two odd numbers is odd, and the product of two even numbers is even, combining them always results in a single element with the same parity type. Each such instance of two adjacent elements having the same parity absolutely requires one operation to resolve that specific bad adjacency, making a greedy approach optimal.
+The key insight is to track the parity of the last element added to the output array and ensure that the parity of the current element matches the last added element.
 
 ## ⚙️ Algorithm
 
-**Greedy**
+1. Initialize an empty list `out` with the first element of the input array `arr` and a counter `cnt` to zero.
+2. Iterate through the rest of the array starting from the second element.
+3. For each element, check if the parity of the last element in `out` matches the parity of the current element.
+4. If they match, increment the counter `cnt` and multiply the last element in `out` by the current element, then append the result to `out`.
+5. If they do not match, append the current element to `out`.
+6. Print the counter `cnt` after processing all elements.
 
 ## ⏱️ Complexity
 
 | Time | Space |
 |:--:|:--:|
-| `O(N)` | `O(N)` |
+| `O(n) due to a single pass through the array.` | `O(1) auxiliary space.` |
 
 ## 🏷️ Tags
 
-`greedy` `math` `parity`
+`bitwise` `parity` `array`
 
 <details>
 <summary>💻 View solution</summary>

@@ -8,25 +8,25 @@
 
 ## 📝 Summary
 
-Accepted solution for Translation on Codeforces.
+Given two strings, determine if one is the reverse of the other.
 
 ## 🔍 Key Observation
 
-Auto-generated from source-code heuristics (no GEMINI_API_KEY configured) -- set one in .env for LLM-authored insight, or edit this section manually.
+The key insight is to check if the first string is the reverse of the second string.
 
 ## ⚙️ Algorithm
 
-**Direct simulation / brute force**
+The algorithm involves reversing the second string and comparing it to the first string. If they are the same, the first string is the reverse of the second string.
 
 ## ⏱️ Complexity
 
 | Time | Space |
 |:--:|:--:|
-| `O(1)–O(n) (estimated -- could not confidently infer)` | `~O(1) (estimated)` |
+| `O(n) due to the reversal operation.` | `O(1) auxiliary space.` |
 
 ## 🏷️ Tags
 
-`implementation` `strings`
+`string` `reverse` `check`
 
 <details>
 <summary>💻 View solution</summary>

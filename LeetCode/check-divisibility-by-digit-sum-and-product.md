@@ -8,25 +8,28 @@
 
 ## 📝 Summary
 
-The problem asks to check if a given integer `n` is divisible by the sum of its digit sum and its digit product.
+Given an integer n, determine if it is divisible by the sum of its digits plus the product of its digits.
 
 ## 🔍 Key Observation
 
-The solution directly implements the problem statement by extracting digits to calculate their sum and product, then performing a modular arithmetic check.
+The solution involves calculating the sum and product of the digits of n and checking if n is divisible by their sum plus product.
 
 ## ⚙️ Algorithm
 
-**Digit extraction and direct calculation**
+1. Convert the integer n to a string to easily iterate over each digit.
+2. Initialize variables `ds` (digit sum) and `pro` (digit product) to 0 and 1 respectively.
+3. Iterate over each character in the string representation of n, convert it to an integer, and update `ds` and `pro` accordingly.
+4. Check if n is divisible by `ds + pro` and return the result.
 
 ## ⏱️ Complexity
 
 | Time | Space |
 |:--:|:--:|
-| `O(log N)` | `O(log N)` |
+| `O(d) where d is the number of digits in n, as we iterate over each digit once.` | `O(1) auxiliary space, as we only use a fixed amount of extra space regardless of the input size.` |
 
 ## 🏷️ Tags
 
-`math` `digits` `arithmetic` `simulation`
+`easy` `math` `digit manipulation`
 
 <details>
 <summary>💻 View solution</summary>

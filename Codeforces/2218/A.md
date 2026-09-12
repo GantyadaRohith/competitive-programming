@@ -8,25 +8,25 @@
 
 ## 📝 Summary
 
-Accepted solution for The 67th Integer Problem on Codeforces.
+Given a number of test cases, print each test case's input as an integer.
 
 ## 🔍 Key Observation
 
-Auto-generated from source-code heuristics (no GEMINI_API_KEY configured) -- set one in .env for LLM-authored insight, or edit this section manually.
+The problem requires reading an integer for each test case and printing it back.
 
 ## ⚙️ Algorithm
 
-**Direct simulation / brute force**
+The solution involves reading the number of test cases first, then for each test case, reading an integer from the input and printing it.
 
 ## ⏱️ Complexity
 
 | Time | Space |
 |:--:|:--:|
-| `~O(n) (estimated)` | `~O(1) (estimated)` |
+| `O(n) where n is the number of test cases, as each test case requires a single read and print operation.` | `O(1) auxiliary space, as the solution uses a constant amount of extra space regardless of the input size.` |
 
 ## 🏷️ Tags
 
-`brute force` `games` `implementation` `math`
+`simple` `input` `output` `integer`
 
 <details>
 <summary>💻 View solution</summary>

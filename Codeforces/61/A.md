@@ -8,25 +8,25 @@
 
 ## 📝 Summary
 
-Given two binary strings of equal length, the problem asks to compute a new binary string where each character is '1' if the corresponding characters in the input strings differ, and '0' if they are the same.
+Given two numbers, determine the bitwise XOR of their digits.
 
 ## 🔍 Key Observation
 
-The required operation is equivalent to a bitwise XOR applied character-by-character to the two input strings.
+The XOR operation is used to compare corresponding digits of the two numbers.
 
 ## ⚙️ Algorithm
 
-**Direct character-by-character comparison and string building.**
+The code iterates over the digits of the two numbers simultaneously. For each pair of digits, it checks if they are equal. If they are, it appends '0' to the result string; otherwise, it appends '1'.
 
 ## ⏱️ Complexity
 
 | Time | Space |
 |:--:|:--:|
-| `O(N)` | `O(N)` |
+| `O(n) due to the single pass through the digits of the numbers.` | `O(n) for the result string.` |
 
 ## 🏷️ Tags
 
-`implementation` `string` `bitwise`
+`bitwise` `xor` `digits`
 
 <details>
 <summary>💻 View solution</summary>

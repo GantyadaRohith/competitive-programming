@@ -8,25 +8,25 @@
 
 ## 📝 Summary
 
-The problem asks to determine if a positive integer is a 'happy number', where a happy number is defined by an iterative process of replacing it with the sum of the squares of its digits, eventually reaching 1. If the process enters a cycle that does not include 1, the number is not happy.
+Determine if a number is a happy number by repeatedly replacing it with the sum of the squares of its digits until it either becomes 1 (indicating a happy number) or enters a cycle that does not include 1.
 
 ## 🔍 Key Observation
 
-All numbers, when repeatedly transformed by summing squares of their digits, will eventually either reach 1 (making them happy) or enter a specific cycle of numbers that does not include 1. The solution exploits the property that a number is happy if and only if this process eventually yields 1 or 7 as a single-digit result, otherwise it yields one of the other single digits (2,3,4,5,6,8,9) which are part of the non-happy cycle.
+The key insight is that a happy number will eventually reach 1 or enter a cycle that does not include 1.
 
 ## ⚙️ Algorithm
 
-**Iterative digit sum of squares. The algorithm repeatedly calculates the sum of squares of digits until the number becomes a single digit. It then checks if this single digit is 1 or 7, which are the terminal happy single digits, otherwise the number is considered unhappy.**
+1. If the number is less than 9 and either 1 or 7, return True as these are happy numbers. 2. Otherwise, repeatedly replace the number with the sum of the squares of its digits until the number becomes 1 or enters a cycle that does not include 1. 3. If the number becomes 1, return True; otherwise, return False.
 
 ## ⏱️ Complexity
 
 | Time | Space |
 |:--:|:--:|
-| `O(log n)` | `O(log n)` |
+| `O(log n) due to the number of digits in the number.` | `O(1) auxiliary space.` |
 
 ## 🏷️ Tags
 
-`number theory` `digit manipulation` `mathematics` `simulation`
+`happy number` `digit manipulation` `cycle detection`
 
 <details>
 <summary>💻 View solution</summary>

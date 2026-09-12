@@ -8,25 +8,25 @@
 
 ## 📝 Summary
 
-Accepted solution for Short Sort on Codeforces.
+Given a string, determine if it is a palindrome or not.
 
 ## 🔍 Key Observation
 
-Auto-generated from source-code heuristics (no GEMINI_API_KEY configured) -- set one in .env for LLM-authored insight, or edit this section manually.
+A string is a palindrome if it reads the same forwards and backwards.
 
 ## ⚙️ Algorithm
 
-**Direct simulation / brute force**
+The algorithm checks if the input string is equal to its reverse. If they are equal, the string is a palindrome; otherwise, it is not.
 
 ## ⏱️ Complexity
 
 | Time | Space |
 |:--:|:--:|
-| `~O(n) (estimated)` | `~O(1) (estimated)` |
+| `O(n) due to the need to reverse the string.` | `O(n) for storing the reversed string.` |
 
 ## 🏷️ Tags
 
-`brute force` `implementation`
+`string` `palindrome` `reverse`
 
 <details>
 <summary>💻 View solution</summary>

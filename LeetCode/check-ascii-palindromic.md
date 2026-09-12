@@ -8,25 +8,27 @@
 
 ## 📝 Summary
 
-The problem asks to determine if an input string is palindromic when each character is replaced by its 8-bit ASCII binary representation.
+Determine if a given string is an ASCII palindromic string.
 
 ## 🔍 Key Observation
 
-The palindromic check must be performed on the concatenated 8-bit binary representations of the original string's characters, not on the original string itself.
+Convert each character to its binary representation and check if the resulting binary string is a palindrome.
 
 ## ⚙️ Algorithm
 
-**Character-wise ASCII to binary conversion followed by a standard string palindrome check.**
+1. Convert each character in the string to its 8-bit binary representation using `ord(i):08b`.
+2. Join all binary strings into a single string.
+3. Check if the joined string is equal to its reverse.
 
 ## ⏱️ Complexity
 
 | Time | Space |
 |:--:|:--:|
-| `O(N)` | `O(N)` |
+| `O(n), where n is the length of the string, due to the conversion and concatenation operations.` | `O(n), as we store the binary representations of the characters.` |
 
 ## 🏷️ Tags
 
-`string` `binary` `palindrome` `ascii`
+`ascii` `palindrome` `binary`
 
 <details>
 <summary>💻 View solution</summary>

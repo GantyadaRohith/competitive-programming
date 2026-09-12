@@ -8,25 +8,29 @@
 
 ## 📝 Summary
 
-Accepted solution for Continuous Subarray Sum on LeetCode.
+Given an array of integers and a target sum, determine if there exists a continuous subarray whose sum equals the target.
 
 ## 🔍 Key Observation
 
-Auto-generated from source-code heuristics (no GEMINI_API_KEY configured) -- set one in .env for LLM-authored insight, or edit this section manually.
+The problem can be solved using a prefix sum approach with a hash map to track remainders of the prefix sums modulo the target.
 
 ## ⚙️ Algorithm
 
-**Direct simulation / brute force**
+1. Initialize a list `pre` to store prefix sums and a dictionary `a` to store remainders and their indices.
+2. Iterate through the array, updating the prefix sum and computing the remainder modulo the target.
+3. If the remainder is zero and the index is greater than or equal to 2, return True.
+4. If the remainder is already in the dictionary, check if the distance between the current index and the stored index is at least 2.
+5. If no such subarray is found, return False.
 
 ## ⏱️ Complexity
 
 | Time | Space |
 |:--:|:--:|
-| `~O(n^3) (estimated -- 3 nested loops)` | `~O(1) (estimated)` |
+| `O(n) due to a single pass through the array and dictionary operations.` | `O(n) for storing prefix sums and dictionary entries.` |
 
 ## 🏷️ Tags
 
-`untagged`
+`prefix sum` `hash map` `subarray` `sum`
 
 <details>
 <summary>💻 View solution</summary>

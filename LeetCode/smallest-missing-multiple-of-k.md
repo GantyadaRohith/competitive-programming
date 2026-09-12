@@ -8,25 +8,30 @@
 
 ## 📝 Summary
 
-The problem asks for the smallest positive integer multiple of 'k' that is not present in the given list of integers 'nums'.
+Find the smallest positive integer that is not a multiple of K and is not present in the given list of numbers.
 
 ## 🔍 Key Observation
 
-To find the smallest missing multiple, iterate through positive multiples of 'k' (k*1, k*2, k*3, ...) in increasing order and check if each is present in 'nums' using a hash set for efficient lookups.
+The solution uses a set to efficiently check for the presence of multiples of K.
 
 ## ⚙️ Algorithm
 
-**Iterative Search with Hashing**
+1. Initialize a variable `i` to 1.
+2. Convert the list `nums` to a set for O(1) average time complexity lookups.
+3. Use a while loop to find the smallest missing multiple of K:
+   - Check if `k*i` is in the set of numbers.
+   - If it is, increment `i` and continue.
+   - If it is not, return `k*i` as the smallest missing multiple.
 
 ## ⏱️ Complexity
 
 | Time | Space |
 |:--:|:--:|
-| `O(N + M)` | `O(N)` |
+| `O(n) due to the set operations and the while loop.` | `O(n) for the set used to store the numbers.` |
 
 ## 🏷️ Tags
 
-`hash set` `iteration` `mathematics` `ad-hoc`
+`python` `set` `multiple` `k`
 
 <details>
 <summary>💻 View solution</summary>

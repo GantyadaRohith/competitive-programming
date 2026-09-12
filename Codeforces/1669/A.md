@@ -8,25 +8,25 @@
 
 ## 📝 Summary
 
-The problem asks to determine a participant's competitive programming division (Division 1, 2, 3, or 4) based on their given rating, using a set of predefined rating thresholds.
+Given a rating, determine the division level based on a specific rating range.
 
 ## 🔍 Key Observation
 
-The problem requires a direct implementation of the given rating-to-division mapping rules using conditional statements, as the thresholds are fixed and simple.
+The solution uses a series of conditional checks to determine the division level based on the input rating.
 
 ## ⚙️ Algorithm
 
-**Direct implementation with conditional statements (if-elif-else).**
+The code reads the input rating, converts it to an integer, and then checks against predefined ranges to determine the division level. It handles negative ratings by converting them to positive.
 
 ## ⏱️ Complexity
 
 | Time | Space |
 |:--:|:--:|
-| `O(t)` | `O(1)` |
+| `O(1) due to constant-time operations.` | `O(1) auxiliary space.` |
 
 ## 🏷️ Tags
 
-`implementation` `conditionals` `basics`
+`easy` `lowercase` `rating` `division`
 
 <details>
 <summary>💻 View solution</summary>

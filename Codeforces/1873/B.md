@@ -8,25 +8,28 @@
 
 ## 📝 Summary
 
-Accepted solution for Good Kid on Codeforces.
+Given an array of integers, find the product of all elements except the minimum element.
 
 ## 🔍 Key Observation
 
-Auto-generated from source-code heuristics (no GEMINI_API_KEY configured) -- set one in .env for LLM-authored insight, or edit this section manually.
+The key insight is to handle the minimum element separately to avoid it affecting the product of the rest of the elements.
 
 ## ⚙️ Algorithm
 
-**Recursion**
+1. Initialize variables to store the minimum element and the product of all elements except the minimum element.
+2. Iterate through the array to find the minimum element and calculate the product of all elements except the minimum element.
+3. If the minimum element is found more than once, increment it by 1 to ensure the product is valid.
+4. Print the final product.
 
 ## ⏱️ Complexity
 
 | Time | Space |
 |:--:|:--:|
-| `~O(n^2) (estimated -- 2 nested loops)` | `~O(1) (estimated)` |
+| `O(n) due to a single pass through the array.` | `O(1) auxiliary space.` |
 
 ## 🏷️ Tags
 
-`brute force` `greedy` `math` `recursion`
+`python` `array` `product` `minimum`
 
 <details>
 <summary>💻 View solution</summary>

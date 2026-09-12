@@ -8,25 +8,25 @@
 
 ## 📝 Summary
 
-Count the total number of magnet groups given a sequence of magnet orientations. A new group starts if a magnet's orientation differs from the preceding one.
+Given a list of strings, count the number of unique strings.
 
 ## 🔍 Key Observation
 
-A new group of magnets begins if and only if the current magnet's polarization (orientation) is different from the previous magnet's polarization.
+The solution uses a simple counter to track unique strings.
 
 ## ⚙️ Algorithm
 
-**Iterative scan**
+The algorithm iterates through the list of strings, comparing each string to the previous one. If they are different, it increments a counter. This effectively counts the number of unique strings.
 
 ## ⏱️ Complexity
 
 | Time | Space |
 |:--:|:--:|
-| `O(N)` | `O(N)` |
+| `O(n) due to a single pass through the list.` | `O(1) auxiliary space.` |
 
 ## 🏷️ Tags
 
-`implementation` `arrays` `counting` `ad-hoc`
+`short` `lowercase` `string` `count`
 
 <details>
 <summary>💻 View solution</summary>

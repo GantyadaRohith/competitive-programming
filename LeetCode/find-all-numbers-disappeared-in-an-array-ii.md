@@ -8,25 +8,27 @@
 
 ## 📝 Summary
 
-Given an array of integers `nums` and a range `[lower, upper]`, find all numbers within that range that are not present in `nums`, and return them as a list of contiguous ranges.
+Given an array of integers, find all numbers in the range [lower, upper] that are missing from the array.
 
 ## 🔍 Key Observation
 
-Efficiently identify all missing numbers in the specified range using a hash set, then group these individual missing numbers into consecutive ranges.
+The solution leverages the properties of sets to efficiently find missing numbers.
 
 ## ⚙️ Algorithm
 
-**Hash Set (for lookup) + Range Grouping**
+1. Convert the input list to a set to remove duplicates and allow for O(1) average time complexity for lookups.
+2. Iterate through the range [lower, upper] and collect numbers not found in the set.
+3. Group consecutive missing numbers into sublists and return the list of sublists.
 
 ## ⏱️ Complexity
 
 | Time | Space |
 |:--:|:--:|
-| `O(N + (upper - lower))` | `O(N + (upper - lower))` |
+| `O(n) due to the single pass through the input list and the range [lower, upper].` | `O(n) for the set and the output list.` |
 
 ## 🏷️ Tags
 
-`array` `set` `range` `missing numbers` `two pointers`
+`python` `set` `range` `missing numbers`
 
 <details>
 <summary>💻 View solution</summary>

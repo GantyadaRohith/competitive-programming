@@ -8,25 +8,25 @@
 
 ## 📝 Summary
 
-Accepted solution for Forbidden Integer on Codeforces.
+Given a set of integers, determine if it's possible to create a sequence where each integer is either 1 or a forbidden integer, and the sum of the sequence equals the length of the sequence.
 
 ## 🔍 Key Observation
 
-Auto-generated from source-code heuristics (no GEMINI_API_KEY configured) -- set one in .env for LLM-authored insight, or edit this section manually.
+The key insight is to handle the case where 1 is forbidden separately and then consider cases where 1 is not forbidden.
 
 ## ⚙️ Algorithm
 
-**Recursion**
+The algorithm first checks if 1 is forbidden. If not, it uses all 1s. If 1 is forbidden, it checks if k is 1 or 2, and then uses 2 and 3 to create the sequence. For k >= 3, it uses 2 and 3 to ensure the sum equals the length of the sequence.
 
 ## ⏱️ Complexity
 
 | Time | Space |
 |:--:|:--:|
-| `~O(n^4) (estimated -- 4 nested loops)` | `~O(1) (estimated)` |
+| `O(1) due to constant-time operations.` | `O(1) auxiliary space.` |
 
 ## 🏷️ Tags
 
-`constructive algorithms` `implementation` `math` `number theory` `recursion`
+`short` `lowercase` `python`
 
 <details>
 <summary>💻 View solution</summary>

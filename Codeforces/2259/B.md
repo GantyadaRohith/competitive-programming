@@ -8,25 +8,29 @@
 
 ## 📝 Summary
 
-The problem asks to find the maximum number of elements in a given array that can be made equal to some non-negative integer `K` by repeatedly applying the operation `x -> x-2` on any chosen element.
+Given an array of integers, determine the maximum number of pairs that can be formed such that the sum of each pair is even.
 
 ## 🔍 Key Observation
 
-When only the operation `x -> x-2` is allowed, numbers can only be made equal if they belong to the same congruence class modulo 4. Specifically, odd numbers form one class (`x % 2 == 1`), numbers of the form `4k+2` form another class (`x % 4 == 2`), and numbers of the form `4k` form a third class (`x % 4 == 0`). Elements cannot transition between these classes, so the solution is to find the largest of these three distinct groups.
+The key insight is to count the number of odd and even numbers in the array and use their properties to determine the maximum number of pairs.
 
 ## ⚙️ Algorithm
 
-**Counting / Frequency Map**
+1. Count the number of odd and even numbers in the array.
+2. If there are at least two odd numbers, they can form pairs with each other, contributing to the maximum count.
+3. If there are at least two even numbers, they can also form pairs with each other.
+4. If there is at least one odd and one even number, they can form a pair.
+5. The maximum number of pairs is the sum of the counts of odd and even numbers, minus the minimum of the counts of odd and even numbers (to avoid double-counting pairs).
 
 ## ⏱️ Complexity
 
 | Time | Space |
 |:--:|:--:|
-| `O(N)` | `O(1)` |
+| `O(n) due to a single pass through the array.` | `O(1) auxiliary space.` |
 
 ## 🏷️ Tags
 
-`math` `number theory` `counting` `greedy`
+`python` `array` `counting` `pairing`
 
 <details>
 <summary>💻 View solution</summary>

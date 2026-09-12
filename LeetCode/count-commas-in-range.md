@@ -8,25 +8,25 @@
 
 ## 📝 Summary
 
-Calculates the total count of 'thousands separator' commas for integers from 1 to `n`, where each integer 1000 or greater contributes exactly one comma.
+Count the number of commas in a range of numbers.
 
 ## 🔍 Key Observation
 
-Integers from 1 to 999 have no commas. Each integer from 1000 to `n` contributes a single comma to the total count.
+The problem can be solved by directly subtracting 999 from the input number if it is greater than 999.
 
 ## ⚙️ Algorithm
 
-**Direct calculation**
+The solution involves checking if the input number `n` is greater than 999. If it is, the function returns `n-999`, which represents the number of commas in the range. If `n` is 999 or less, the function returns 0, as there are no commas in the range.
 
 ## ⏱️ Complexity
 
 | Time | Space |
 |:--:|:--:|
-| `O(1)` | `O(1)` |
+| `O(1) due to constant-time operations.` | `O(1) auxiliary space.` |
 
 ## 🏷️ Tags
 
-`math` `counting` `ad-hoc` `arithmetic`
+`easy` `math`
 
 <details>
 <summary>💻 View solution</summary>

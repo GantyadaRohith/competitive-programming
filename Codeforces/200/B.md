@@ -8,25 +8,28 @@
 
 ## 📝 Summary
 
-Calculate the average percentage of orange juice in a mixture of several drinks, where each drink contributes equally and has a given percentage of orange juice.
+Given a list of integers representing the number of drinks each person drinks, calculate the average number of drinks per person.
 
 ## 🔍 Key Observation
 
-The final percentage of orange juice in the mixture is simply the arithmetic mean of the individual percentages of each drink.
+The key insight is to sum the total number of drinks and divide by the number of people.
 
 ## ⚙️ Algorithm
 
-**Direct calculation / Basic arithmetic**
+1. Read the number of people (t) and the list of drinks (arr) from input.
+2. Calculate the total number of drinks by summing the elements of arr.
+3. Divide the total number of drinks by the number of people to get the average.
+4. Print the average.
 
 ## ⏱️ Complexity
 
 | Time | Space |
 |:--:|:--:|
-| `O(n)` | `O(n)` |
+| `O(n) due to the single pass required to sum the array.` | `O(1) auxiliary space.` |
 
 ## 🏷️ Tags
 
-`implementation` `math` `arithmetic` `average`
+`easy` `python` `sum` `average`
 
 <details>
 <summary>💻 View solution</summary>

@@ -8,25 +8,31 @@
 
 ## 📝 Summary
 
-The problem asks to calculate the total score from 'X's on a 10x10 target grid. Each 'X' contributes points corresponding to its concentric "ring" number, where the outermost ring scores 1 point and points increase towards the center.
+Given a 10x10 grid of characters, calculate the total points based on the positions of 'X' characters, where points are determined by the layer of the grid they are in.
 
 ## 🔍 Key Observation
 
-The point value for a cell `(i, j)` is directly determined by its minimum distance to any of the four borders (top, left, bottom, right), plus one. This can be calculated with the formula `min(i, j, 9-i, 9-j) + 1`.
+The key insight is to calculate the layer of each 'X' based on its position in the grid.
 
 ## ⚙️ Algorithm
 
-**Direct simulation / Implementation**
+1. Read the input for the number of test cases (t).
+2. For each test case, read the 10x10 grid of characters.
+3. Initialize a variable `pts` to store the total points.
+4. Iterate over each cell in the grid.
+5. For each 'X' character, calculate its layer as the minimum of its row and column indices, plus one.
+6. Add the layer to `pts`.
+7. Print the total points for the test case.
 
 ## ⏱️ Complexity
 
 | Time | Space |
 |:--:|:--:|
-| `O(1)` | `O(1)` |
+| `O(t * 100) due to the nested loops iterating over the grid for each test case.` | `O(1) auxiliary space as only a few variables are used.` |
 
 ## 🏷️ Tags
 
-`implementation` `math` `grids` `ad hoc`
+`short` `lowercase` `grid` `points` `layer`
 
 <details>
 <summary>💻 View solution</summary>

@@ -8,25 +8,29 @@
 
 ## 📝 Summary
 
-Accepted solution for Extremely Round on Codeforces.
+Given a number, determine the minimum number of digits that need to be removed to make the number extremely round.
 
 ## 🔍 Key Observation
 
-Auto-generated from source-code heuristics (no GEMINI_API_KEY configured) -- set one in .env for LLM-authored insight, or edit this section manually.
+The key insight is to remove all digits except the most significant digit (MSB) and the last digit.
 
 ## ⚙️ Algorithm
 
-**Recursion**
+1. Read the number of test cases `t`.
+2. For each test case:
+   - Read the number `n`.
+   - If `n` is less than or equal to 9, print `n` as it is already extremely round.
+   - Otherwise, calculate the number of digits to remove by subtracting the length of the number minus 1 (to exclude the last digit) from 9.
 
 ## ⏱️ Complexity
 
 | Time | Space |
 |:--:|:--:|
-| `~O(n^2) (estimated -- 2 nested loops)` | `~O(1) (estimated)` |
+| `O(1) due to constant operations.` | `O(1) auxiliary space.` |
 
 ## 🏷️ Tags
 
-`brute force` `implementation` `recursion`
+`easy` `lowercase` `math` `tags`
 
 <details>
 <summary>💻 View solution</summary>

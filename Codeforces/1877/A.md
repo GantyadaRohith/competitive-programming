@@ -8,25 +8,30 @@
 
 ## 📝 Summary
 
-Given the scores of n-1 teams, find the score for the n-th team such that the sum of scores of all n teams is exactly zero.
+Given an array of integers, find the sum of all elements and print the negative of that sum.
 
 ## 🔍 Key Observation
 
-To achieve a total sum of zero for all n scores, the n-th team's score must be the negative of the sum of the other n-1 team's scores.
+The key insight is to calculate the sum of the array and then print its negative.
 
 ## ⚙️ Algorithm
 
-**Direct calculation / Summation**
+1. Read the number of test cases 't'.
+2. For each test case:
+   a. Read the number of elements 'n' in the array.
+   b. Read the array elements into a list 'arr'.
+   c. Calculate the sum of all elements in 'arr' using the built-in sum function.
+   d. Print the negative of the sum.
 
 ## ⏱️ Complexity
 
 | Time | Space |
 |:--:|:--:|
-| `O(N)` | `O(N)` |
+| `O(n) due to the single pass through the array to calculate the sum.` | `O(1) auxiliary space.` |
 
 ## 🏷️ Tags
 
-`math` `arrays` `implementation` `ad-hoc`
+`easy` `python` `sum` `negative`
 
 <details>
 <summary>💻 View solution</summary>

@@ -8,25 +8,25 @@
 
 ## 📝 Summary
 
-Print an m x n grid representing a "snake" pattern where odd-indexed rows are filled with '#' characters, and even-indexed rows alternate between having a single '#' at the rightmost column and a single '#' at the leftmost column.
+Given a grid size m x n, print a pattern of '#' and '.' characters in a snake-like pattern.
 
 ## 🔍 Key Observation
 
-The pattern is regular and depends on the row index's parity. Even rows are solid, while odd rows require a flag to alternate the '#' position between the left and right edges.
+The pattern alternates between two lines of '#' and '.' characters.
 
 ## ⚙️ Algorithm
 
-**Direct Implementation / Pattern Generation**
+The solution uses a simple loop to iterate over the grid rows. It checks if the row index is even or odd to determine which pattern to print. The pattern alternates between two lines, '#' and '.'.
 
 ## ⏱️ Complexity
 
 | Time | Space |
 |:--:|:--:|
-| `O(m * n)` | `O(n)` |
+| `O(m) due to the single loop over the grid rows.` | `O(1) auxiliary space as only a few variables are used.` |
 
 ## 🏷️ Tags
 
-`implementation` `strings` `patterns` `loops` `adhoc`
+`snake` `pattern` `alternating`
 
 <details>
 <summary>💻 View solution</summary>

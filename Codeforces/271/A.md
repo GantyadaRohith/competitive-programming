@@ -8,25 +8,27 @@
 
 ## 📝 Summary
 
-Accepted solution for Beautiful Year on Codeforces.
+Find the first year after the given year that has exactly four distinct digits.
 
 ## 🔍 Key Observation
 
-Auto-generated from source-code heuristics (no GEMINI_API_KEY configured) -- set one in .env for LLM-authored insight, or edit this section manually.
+The key insight is to check each subsequent year for exactly four distinct digits.
 
 ## ⚙️ Algorithm
 
-**Recursion + Hash map/set lookup**
+1. Start from the given year and incrementally check each year.
+2. For each year, convert it to a string and use a set to track unique digits.
+3. If the set size is four, print the year and break the loop.
 
 ## ⏱️ Complexity
 
 | Time | Space |
 |:--:|:--:|
-| `~O(n^2) (estimated -- 2 nested loops)` | `~O(n) (estimated)` |
+| `O(n log n) due to sorting.` | `O(1) auxiliary space.` |
 
 ## 🏷️ Tags
 
-`brute force` `recursion` `hash-map`
+`short` `lowercase` `problem-solving` `algorithm`
 
 <details>
 <summary>💻 View solution</summary>

@@ -8,25 +8,28 @@
 
 ## 📝 Summary
 
-Accepted solution for Find the Duplicate Number on LeetCode.
+Given an array of integers where each integer appears at most once except for one that appears twice, find the duplicate number.
 
 ## 🔍 Key Observation
 
-Auto-generated from source-code heuristics (no GEMINI_API_KEY configured) -- set one in .env for LLM-authored insight, or edit this section manually.
+The duplicate number can be found by using a set to track seen numbers and identifying the first duplicate encountered.
 
 ## ⚙️ Algorithm
 
-**Hash map/set lookup**
+1. Initialize an empty set `s` to keep track of seen numbers.
+2. Iterate through each number `i` in the input list `nums`:
+   - If `i` is not in `s`, add it to `s`.
+   - If `i` is already in `s`, return `i` as it is the duplicate number.
 
 ## ⏱️ Complexity
 
 | Time | Space |
 |:--:|:--:|
-| `~O(n) (estimated)` | `~O(n) (estimated)` |
+| `O(n) due to a single pass through the list.` | `O(n) auxiliary space for the set.` |
 
 ## 🏷️ Tags
 
-`hash-map`
+`short` `lowercase` `find` `duplicate`
 
 <details>
 <summary>💻 View solution</summary>
