@@ -1,0 +1,5 @@
+# Write your MySQL query statement below
+with manager as(
+    select * from employee where managerId is not NUll
+)
+select m.name as Employee from Employee as e,manager as m where m.managerId=e.id and e.salary<m.salary;
